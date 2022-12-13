@@ -18,18 +18,21 @@ function setTimer() {
 
 //Start Game
 document.getElementById("start-button").addEventListener("click", function() {
+    document.getElementById("questions-screen").style.display = "flex";
+    document.getElementById("quiz-intro-screen").style.display = "none";
     setTimer();
 });
 
 //Show high scores
-function showHighScores() {
+document.getElementById("view-high-scores").addEventListener("click", function() {
     document.getElementById("high-scores-screen").style.display = "flex";
     document.getElementById("quiz-intro-screen").style.display = "none";
-}
-
-document.getElementById("view-high-scores").addEventListener("click", function() {
-    showHighScores();
 });
+//Go back button
+document.getElementById("go-back").addEventListener("click", function() {
+    document.getElementById("quiz-intro-screen").style.display = "flex";
+    document.getElementById("high-scores-screen").style.display = "none";
+})
 
 
 
@@ -48,5 +51,5 @@ document.getElementById("view-high-scores").addEventListener("click", function()
 //String values are enclosed in:
 // "", <>, (), #
 
-//The coding language that makes websites interactive is:
+//The coding language that makes websites interactive is 
 //HTML, CSS, Javascript, French
