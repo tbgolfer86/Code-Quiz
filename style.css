@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
-    /* global default font */
     font-family: Monospace;
     color: yellowgreen;   
 }
@@ -32,7 +29,7 @@ button:hover {
     background-color: black;
 }
 
-/* OUTER container */
+/* Outer Container Styling */
 .outer-container {
     display: flex;
     flex-direction: column;
@@ -41,14 +38,14 @@ button:hover {
     height: 100vh;
 }
 
-/* TOP BAR */
+/* Top Bar Styling */
 .top-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-/* INNER container */
+/* Inner Container Styling */
 .inner-container {
     display: flex;
     flex-direction: column;
@@ -60,7 +57,7 @@ button:hover {
     margin: auto;
 }
 
-/* QUIZ INTRO screen */
+/* Quiz Intro Screen Styling */
 .quiz-intro-screen {
     display: none;
     flex-direction: column;
@@ -71,7 +68,7 @@ button:hover {
     background-color: cornflowerblue;
 }
 
-/* MAIN quiz content */
+/* MAIN */
 main {
     display: flex;
     flex-direction: column;
@@ -82,7 +79,7 @@ main {
     background-color: cornflowerblue;
 }
 
-/* QUESTIONS screen */
+/* Questions Screen Styling */
 .questions-screen {
     display: none;
     flex-direction: column;
@@ -93,7 +90,7 @@ main {
     background-color: cornflowerblue;
 }
 
-/* FINISH screen */
+/* Quiz Finished Screen Styling */
 .quiz-finished-screen {
     display: flex;
     flex-direction: column;
@@ -104,7 +101,7 @@ main {
     background-color: cornflowerblue;
 }
 
-/* HIGH SCORES screen */
+/* High Scores Screen Styling */
 .high-scores-screen {
     display: none;
     flex-direction: column;
