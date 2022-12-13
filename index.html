@@ -9,25 +9,53 @@
 </head>
 
 <body>
-    <div>
-        <p>Code Quiz</p>
-        <p>00:00</p>
+
+    <div class="outer-container">
+        <div class="top-bar">
+            <button id="view-high-scores">View High Scores</button>
+            <p id="timer">Timer: 00:00</p>
+        </div>
+        <div class="inner-container">
+            <header class="quiz-intro-screen">
+                <h1>Welcome to the Code Quiz!</h1>
+                <p>To get started press the Start button</p>
+                <button id="start">START</button>
+            </header>
+            <main>
+                <section class="questions-screen">
+                    <h2>Question Here</h2>
+                    <ul>
+                        <!-- GENERATE IN JAVASCRIPT -->
+                        <li><button>Answer 1</button></li>
+                        <li><button>Answer 2</button></li>
+                        <li><button>Answer 3</button></li>
+                        <li><button>Answer 4</button></li>
+                    </ul>
+                </section>
+                <section class="quiz-finished-screen">
+                    <h2>Quiz Finished!</h2>
+                    <p id="final-score">Your final score: 00</p>
+                    <div>
+                        <label for="">Enter Initials:</label>
+                        <input type="text">
+                        <button id="submit">Submit</button>
+                    </div>
+                </section>
+                <section class="high-scores-screen">
+                    <h2>High Scores:</h2>
+                    <ul>
+                        <!-- GENERATE IN JAVASCRIPT -->
+                        <li>AB - 10</li>
+                        <li>AB - 10</li>
+                        <li>AB - 10</li>
+                        <li>AB - 10</li>
+                    </ul>
+                    <button id="go-back">Go Back</button>
+                    <button id="clear-high-scores">Clear High Scores</button>
+                </section>
+             </main>
+        </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="script.js"></script>
 </body>
 </html>
