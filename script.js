@@ -2,8 +2,8 @@
 //Game Timer
 var timerElement = document.getElementById("timer");
 var secondsLeft = 60;
+
 function setTimer() {
-  // Sets interval in variable
   var timerInterval = setInterval(function() {
     secondsLeft--;
     timerElement.textContent = "Timer: " + secondsLeft;
@@ -19,6 +19,16 @@ function setTimer() {
 //Start Game
 document.getElementById("start-button").addEventListener("click", function() {
     setTimer();
+});
+
+//Show high scores
+function showHighScores() {
+    document.getElementById("high-scores-screen").style.display = "flex";
+    document.getElementById("quiz-intro-screen").style.display = "none";
+}
+
+document.getElementById("view-high-scores").addEventListener("click", function() {
+    showHighScores();
 });
 
 
