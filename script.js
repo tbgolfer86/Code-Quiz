@@ -42,7 +42,7 @@ var timerElement = document.getElementById("timer");
 var timer;
 var timerCount = 60;
 
-//Game Timer
+//Game Timer function
 function startTimer() {
   timer = setInterval(function() {
     timerCount--;
@@ -53,6 +53,22 @@ function startTimer() {
     }
   }, 1000);
 }
+
+//View high scores
+document.getElementById("view-high-scores").addEventListener("click", function() {
+    document.getElementById("high-scores-screen").style.display = "flex";
+    document.getElementById("quiz-intro-screen").style.display = "none";
+    document.getElementById("questions-screen").style.display = "none";
+    document.getElementById("quiz-finished-screen").style.display = "none";
+});
+
+//Go back button
+document.getElementById("go-back").addEventListener("click", function() {
+    document.getElementById("quiz-intro-screen").style.display = "flex";
+    document.getElementById("high-scores-screen").style.display = "none";
+    document.getElementById("questions-screen").style.display = "none";
+    document.getElementById("quiz-finished-screen").style.display = "none";
+})
 
 //Display quizData onto screen
 function displayQuiz() {
@@ -73,16 +89,3 @@ document.getElementById("start-button").addEventListener("click", function() {
     displayQuiz();
 });
 
-//Show high scores
-document.getElementById("view-high-scores").addEventListener("click", function() {
-    document.getElementById("high-scores-screen").style.display = "flex";
-    document.getElementById("quiz-intro-screen").style.display = "none";
-    document.getElementById("questions-screen").style.display = "none";
-    document.getElementById("quiz-finished-screen").style.display = "none";
-});
-
-//Go back button
-document.getElementById("go-back").addEventListener("click", function() {
-    document.getElementById("quiz-intro-screen").style.display = "flex";
-    document.getElementById("high-scores-screen").style.display = "none";
-})
