@@ -32,9 +32,21 @@ var quizData = [{
 }];
 console.log(quizData);
 
+var questions = document.getElementById("question");
+var option0 = document.getElementById("choice0");
+var option1 = document.getElementById("choice1");
+var option2 = document.getElementById("choice2");
+var option3 = document.getElementById("choice3");
+
 //Display quizData onto screen
 function displayQuiz() {
-    
+    for (i = 0; i < quizData.length; i++) {
+        questions.textContent = quizData[i].question;
+        option0.textContent = quizData[i].choice0;
+        option1.textContent = quizData[i].choice1;
+        option2.textContent = quizData[i].choice2;
+        option3.textContent = quizData[i].choice3;
+    } 
 }
 
 //Game Timer
@@ -59,12 +71,15 @@ document.getElementById("start-button").addEventListener("click", function() {
     document.getElementById("questions-screen").style.display = "flex";
     document.getElementById("quiz-intro-screen").style.display = "none";
     setTimer();
+    displayQuiz();
 });
 
 //Show high scores
 document.getElementById("view-high-scores").addEventListener("click", function() {
     document.getElementById("high-scores-screen").style.display = "flex";
     document.getElementById("quiz-intro-screen").style.display = "none";
+    document.getElementById("questions-screen").style.display = "none";
+    document.getElementById("quiz-finished-screen").style.display = "none";
 });
 //Go back button
 document.getElementById("go-back").addEventListener("click", function() {
