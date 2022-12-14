@@ -70,6 +70,17 @@ document.getElementById("go-back").addEventListener("click", function() {
     document.getElementById("quiz-finished-screen").style.display = "none";
 })
 
+//Start Game
+document.getElementById("start-button").addEventListener("click", function() {
+    document.getElementById("questions-screen").style.display = "flex";
+    document.getElementById("quiz-intro-screen").style.display = "none";
+    startTimer();
+    displayQuiz();
+});
+
+
+
+
 //Display quizData onto screen
 function displayQuiz() {
     for (i = 0; i < quizData.length; i++) {
@@ -81,11 +92,5 @@ function displayQuiz() {
     } 
 };
 
-//Start Game
-document.getElementById("start-button").addEventListener("click", function() {
-    document.getElementById("questions-screen").style.display = "flex";
-    document.getElementById("quiz-intro-screen").style.display = "none";
-    startTimer();
-    displayQuiz();
-});
+
 
