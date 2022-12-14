@@ -81,6 +81,7 @@ document.getElementById("view-high-scores").addEventListener("click", function()
     document.getElementById("questions-screen").style.display = "none";
     document.getElementById("quiz-finished-screen").style.display = "none";
 });
+
 //Go back button
 document.getElementById("go-back").addEventListener("click", function() {
     document.getElementById("quiz-intro-screen").style.display = "flex";
