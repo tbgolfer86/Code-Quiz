@@ -64,7 +64,7 @@ document.getElementById("go-back").addEventListener("click", function() {
     document.getElementById("high-scores-screen").style.display = "none";
     document.getElementById("questions-screen").style.display = "none";
     document.getElementById("quiz-finished-screen").style.display = "none";
-})
+});
 
 //Start game button
 document.getElementById("start-button").addEventListener("click", function() {
@@ -96,7 +96,7 @@ function displayFinish () {
         document.getElementById("questions-screen").style.display = "none";
         score.textContent = "Your final score: " + timerCount;
     }
-}
+};
 
 //validates buttons
 btn1.addEventListener("click", function() {
