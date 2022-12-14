@@ -76,9 +76,9 @@ document.getElementById("start-button").addEventListener("click", function() {
     displayQuiz();
 });
 
+//Displays quizData array of objects onto screen
 var numberChoice = 0;
 
-//Displays quizData array of objects onto screen
 function displayQuiz() {
         question.textContent = quizData[numberChoice].question;
         option1.textContent = quizData[numberChoice].choice1;
