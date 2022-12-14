@@ -38,7 +38,7 @@ var timer;
 var timerCount = 60;
 var score = document.getElementById("score");
 
-//Display Score
+//Displays score at end of game
 function getScore() {
     score.textContent = "Your final score: " + timerCount;
 }
@@ -55,13 +55,12 @@ function startTimer() {
   }, 1000);
 }
 
-//View high scores
+//View high scores button
 document.getElementById("view-high-scores").addEventListener("click", function() {
     document.getElementById("high-scores-screen").style.display = "flex";
     document.getElementById("quiz-intro-screen").style.display = "none";
     document.getElementById("questions-screen").style.display = "none";
     document.getElementById("quiz-finished-screen").style.display = "none";
-    console.log("clicked");
 });
 
 //Go back button
@@ -72,17 +71,19 @@ document.getElementById("go-back").addEventListener("click", function() {
     document.getElementById("quiz-finished-screen").style.display = "none";
 })
 
-//Start Game
+//Start game button
 document.getElementById("start-button").addEventListener("click", function() {
     document.getElementById("questions-screen").style.display = "flex";
     document.getElementById("quiz-intro-screen").style.display = "none";
+    document.getElementById("high-scores-screen").style.display = "none";
+    document.getElementById("quiz-finished-screen").style.display = "none";
     startTimer();
     displayQuiz();
 });
 
 var numberChoice = 0;
 
-//Display quizData onto screen
+//Displays quizData array of objects onto screen
 function displayQuiz() {
         question.textContent = quizData[numberChoice].question;
         option1.textContent = quizData[numberChoice].choice1;
@@ -91,7 +92,7 @@ function displayQuiz() {
         option4.textContent = quizData[numberChoice].choice4;
 };
 
-//Display quiz finished screen
+//Displays quiz finished screen after array has been gone through
 function displayFinish () {
     if (numberChoice > 3) {
         document.getElementById("quiz-finished-screen").style.display = "flex";
@@ -102,7 +103,7 @@ function displayFinish () {
     }
 }
 
-//validate buttons
+//validates buttons
 btn1.addEventListener("click", function() {
     if (btn1.clicked == true) {
         numberChoice = numberChoice++;
