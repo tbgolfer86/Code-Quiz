@@ -4,7 +4,6 @@ var quizData = [{
     choice2: "booleans",
     choice3: "numbers",
     choice4: "prompts",
-    answer: "prompts"
 },
 {   
     question: "Arrays in Javascript can be used to store: ",
@@ -12,7 +11,6 @@ var quizData = [{
     choice2: "strings",
     choice3: "objects",
     choice4: "all of the above",
-    answer: "all of the above"
 },
 {
     question: "String values are enclosed in: ",
@@ -20,7 +18,6 @@ var quizData = [{
     choice2: "''",
     choice3: "<>",
     choice4: "{}",
-    answer: "''"
 },
 {
     question: "The coding language that makes websites interactive is: ",
@@ -28,7 +25,6 @@ var quizData = [{
     choice2: "CSS",
     choice3: "Javascript",
     choice4: "none of the above",
-    answer: "Javascript"
 },0];
 
 var question = document.getElementById("question");
