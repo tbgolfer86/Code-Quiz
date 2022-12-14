@@ -1,3 +1,41 @@
+var quizData = [{
+    question: "Commonly used data types do not include: ",
+    choice0: "strings",
+    choice1: "booleans",
+    choice2: "numbers",
+    choice3: "prompts",
+    answer: 3
+},
+{   
+    question: "Arrays in Javascript can be used to store: ",
+    choice0: "numbers",
+    choice1: "strings",
+    choice2: "objects",
+    choice3: "all of the above",
+    answer: 3
+},
+{
+    question: "String values are enclosed in: ",
+    choice0: "&&",
+    choice1: "''",
+    choice2: "<>",
+    choice3: "{}",
+    answer: 1
+},
+{
+    question: "The coding language that makes websites interactive is: ",
+    choice0: "HTML",
+    choice1: "CSS",
+    choice2: "Javascript",
+    choice3: "none of the above",
+    answer: 2
+}];
+console.log(quizData);
+
+//Display quizData onto screen
+function displayQuiz() {
+    
+}
 
 //Game Timer
 var timerElement = document.getElementById("timer");
@@ -33,23 +71,3 @@ document.getElementById("go-back").addEventListener("click", function() {
     document.getElementById("quiz-intro-screen").style.display = "flex";
     document.getElementById("high-scores-screen").style.display = "none";
 })
-
-
-
-
-
-
-
-
-
-//Commonly used data types do not include:
-//strings, booleans, numbers, prompts
-
-//Arrays in Javascript can be used to store:
-//numbers, strings, booleans, all of the above
-
-//String values are enclosed in:
-// "", <>, (), #
-
-//The coding language that makes websites interactive is 
-//HTML, CSS, Javascript, French
