@@ -38,7 +38,21 @@ var option2 = document.getElementById("choice2");
 var option3 = document.getElementById("choice3");
 var option4 = document.getElementById("choice4");
 
+var timerElement = document.getElementById("timer");
+var timer;
+var timerCount = 60;
 
+//Game Timer
+function startTimer() {
+  timer = setInterval(function() {
+    timerCount--;
+    timerElement.textContent = "Timer: " + timerCount;
+    if(timerCount === 0) {
+      clearInterval(timer);
+      return;
+    }
+  }, 1000);
+}
 
 //Display quizData onto screen
 function displayQuiz() {
@@ -51,27 +65,11 @@ function displayQuiz() {
     } 
 };
 
-//Game Timer
-var timerElement = document.getElementById("timer");
-var secondsLeft = 60;
-function setTimer() {
-  var timerInterval = setInterval(function() {
-    secondsLeft--;
-    timerElement.textContent = "Timer: " + secondsLeft;
-
-    if(secondsLeft === 0) {
-      clearInterval(timerInterval);
-      return;
-    }
-
-  }, 1000);
-}
-
 //Start Game
 document.getElementById("start-button").addEventListener("click", function() {
     document.getElementById("questions-screen").style.display = "flex";
     document.getElementById("quiz-intro-screen").style.display = "none";
-    setTimer();
+    startTimer();
     displayQuiz();
 });
 
