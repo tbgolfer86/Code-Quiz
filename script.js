@@ -38,11 +38,6 @@ var timer;
 var timerCount = 60;
 var score = document.getElementById("score");
 
-//Displays score at end of game
-function getScore() {
-    score.textContent = "Your final score: " + timerCount;
-}
-
 //Game Timer function
 function startTimer() {
   timer = setInterval(function() {
@@ -92,14 +87,14 @@ function displayQuiz() {
         option4.textContent = quizData[numberChoice].choice4;
 };
 
-//Displays quiz finished screen after array has been gone through
+//Displays quiz finished screen with final score after array has been gone through
 function displayFinish () {
     if (numberChoice > 3) {
         document.getElementById("quiz-finished-screen").style.display = "flex";
         document.getElementById("quiz-intro-screen").style.display = "none";
         document.getElementById("high-scores-screen").style.display = "none";
         document.getElementById("questions-screen").style.display = "none";
-        getScore();
+        score.textContent = "Your final score: " + timerCount;
     }
 }
 
