@@ -50,6 +50,10 @@ function startTimer() {
   }, 1000);
 }
 
+function timerReset () {
+    timerCount = 60;
+}
+
 //View high scores button
 document.getElementById("view-high-scores").addEventListener("click", function() {
     document.getElementById("high-scores-screen").style.display = "flex";
@@ -74,13 +78,10 @@ document.getElementById("start-button").addEventListener("click", function() {
     document.getElementById("quiz-intro-screen").style.display = "none";
     document.getElementById("high-scores-screen").style.display = "none";
     document.getElementById("quiz-finished-screen").style.display = "none";
+    timerReset();
     startTimer();
     displayQuiz();
 });
-
-function arrayReset () {
-    numberChoice = 0;
-}
 
 //Displays quizData array of objects onto screen
 var numberChoice = 0;
@@ -92,6 +93,10 @@ function displayQuiz() {
         option3.textContent = quizData[numberChoice].choice3;
         option4.textContent = quizData[numberChoice].choice4;
 };
+
+function arrayReset () {
+    numberChoice = 0;
+}
 
 //Displays quiz finished screen with final score after array has been gone through
 function displayFinish () {
