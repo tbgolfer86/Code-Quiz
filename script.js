@@ -64,6 +64,8 @@ document.getElementById("go-back").addEventListener("click", function() {
     document.getElementById("high-scores-screen").style.display = "none";
     document.getElementById("questions-screen").style.display = "none";
     document.getElementById("quiz-finished-screen").style.display = "none";
+    arrayReset();
+    displayQuiz();
 });
 
 //Start game button
@@ -75,6 +77,10 @@ document.getElementById("start-button").addEventListener("click", function() {
     startTimer();
     displayQuiz();
 });
+
+function arrayReset () {
+    numberChoice = 0;
+}
 
 //Displays quizData array of objects onto screen
 var numberChoice = 0;
