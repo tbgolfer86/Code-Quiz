@@ -100,68 +100,58 @@ function displayFinish () {
 
 //validates buttons
 btn1.addEventListener("click", function() {
-    if (btn1.clicked == true) {
-        numberChoice = numberChoice++;
-    } if (question.textContent === "Commonly used data types do not include: ") {
+    if (numberChoice === 0) {
         (timerCount = timerCount - 10);   
-    } if (question.textContent === "Arrays in Javascript can be used to store: ") {
-        (timerCount = timerCount - 10);
-    } if (question.textContent === "String values are enclosed in: ") {
-        (timerCount = timerCount - 10);
-    } if (question.textContent === "The coding language that makes websites interactive is: " ) {
-        (timerCount = timerCount - 10);
-    } 
+    } if (numberChoice === 1) {
+        (timerCount = timerCount - 10);   
+    } if (numberChoice === 2) {
+        (timerCount = timerCount - 10);   
+    } if (numberChoice === 3) {
+        (timerCount = timerCount - 10);   
+    }
+    numberChoice++;
     displayQuiz();
     displayFinish();
-    console.log("click")
-    console.log(numberChoice++)
 });
-        
+     
 btn2.addEventListener("click", function() {
-    if (btn2.clicked == true) {
-        numberChoice = numberChoice++;
-    } if (question.textContent === "Commonly used data types do not include: ") {
-        (timerCount = timerCount - 10);
-    } if (question.textContent === "Arrays in Javascript can be used to store: ") {
-        (timerCount = timerCount - 10);
-    } if (question.textContent === "The coding language that makes websites interactive is: " ) {
-        (timerCount = timerCount - 10);
-    } 
+    if (numberChoice === 0) {
+        (timerCount = timerCount - 10);   
+    } if (numberChoice === 1) {
+        (timerCount = timerCount - 10);   
+    } if (numberChoice === 3) {
+        (timerCount = timerCount - 10);   
+    }
+    numberChoice++;
     displayQuiz();
-    displayFinish();
-    console.log("click")
-    console.log(numberChoice++)
+    displayFinish(); 
 });
-
+      
 btn3.addEventListener("click", function() {
-    if (btn3.clicked == true) {
-        numberChoice = numberChoice++;
-    } if (question.textContent === "Commonly used data types do not include: ") {
-        (timerCount = timerCount - 10);
-    } if (question.textContent === "Arrays in Javascript can be used to store: ") {
-        (timerCount = timerCount - 10);
-    } if (question.textContent === "String values are enclosed in: ") {
-        (timerCount = timerCount - 10);
-    } 
+    if (numberChoice === 0) {
+        (timerCount = timerCount - 10);   
+    } if (numberChoice === 1) {
+        (timerCount = timerCount - 10);   
+    } if (numberChoice === 2) {
+        (timerCount = timerCount - 10);   
+    }
+    numberChoice++;
     displayQuiz();
     displayFinish();
-    console.log("click")
-    console.log(numberChoice++)
 });
 
 btn4.addEventListener("click", function() {
-    if (btn4.clicked == true) {
-        numberChoice = numberChoice++;
-    } if (question.textContent === "String values are enclosed in: ") {
-        (timerCount = timerCount - 10);
-    } if (question.textContent === "The coding language that makes websites interactive is: " ) {
-        (timerCount = timerCount - 10);
+    if (numberChoice === 2) {
+        (timerCount = timerCount - 10);   
+    } if (numberChoice === 3) {
+        (timerCount = timerCount - 10);   
     }
+    numberChoice++;
     displayQuiz();
     displayFinish();
-    console.log("click")
-    console.log(numberChoice++)
 });
+
+
 
 
 
