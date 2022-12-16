@@ -40,7 +40,7 @@ var timerCount = 60;
 //Submit score and initials to scoreboard
 var score = document.getElementById("score");
 var initials = document.getElementById("initials");
-var scoreboard = document.getElementById("scoreboard");
+var scoreboardItem = document.getElementById("scoreboard-item");
 
 document.getElementById("submit").addEventListener("click", function() {
     localStorage.setItem("initials", initials.value);
@@ -71,7 +71,7 @@ document.getElementById("view-high-scores").addEventListener("click", function()
     document.getElementById("quiz-finished-screen").style.display = "none";
     x = localStorage.getItem("initials");
     y = localStorage.getItem("score");
-    scoreboard.textContent = x + "                 " + y;
+    scoreboardItem.textContent = x + "                 " + y;
 });
 
 //Go back button
