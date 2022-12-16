@@ -38,6 +38,25 @@ var timer;
 var timerCount = 60;
 var score = document.getElementById("score");
 
+//Submit score and initials to scoreboard
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 //Game Timer function
 function startTimer() {
   timer = setInterval(function() {
@@ -107,8 +126,7 @@ function displayFinish () {
         document.getElementById("questions-screen").style.display = "none";
         clearInterval(timer);
         timerElement.textContent = "Timer: " + timerCount;
-        score.textContent = "Your final score: " + timerCount;
-        
+        score.textContent = "Your final score: " + timerCount;      
     }
 };
 
