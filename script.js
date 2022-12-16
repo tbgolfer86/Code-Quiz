@@ -36,26 +36,16 @@ var option4 = document.getElementById("choice4");
 var timerElement = document.getElementById("timer");
 var timer;
 var timerCount = 60;
-var score = document.getElementById("score");
 
 //Submit score and initials to scoreboard
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+var score = document.getElementById("score");
+var initials = document.getElementById("initials");
+var scoreboard = document.getElementById("scoreboard");
+
+document.getElementById("submit").addEventListener("click", function() {
+    localStorage.setItem("initials", initials.value);
+    localStorage.setItem("score", timerCount);
+});
 
 //Game Timer function
 function startTimer() {
@@ -69,7 +59,7 @@ function startTimer() {
   }, 1000);
 }
 
-function timerReset () {
+function timerReset() {
     timerCount = 60;
 }
 
@@ -79,6 +69,9 @@ document.getElementById("view-high-scores").addEventListener("click", function()
     document.getElementById("quiz-intro-screen").style.display = "none";
     document.getElementById("questions-screen").style.display = "none";
     document.getElementById("quiz-finished-screen").style.display = "none";
+    x = localStorage.getItem("initials");
+    y = localStorage.getItem("score");
+    scoreboard.textContent = x + "                 " + y;
 });
 
 //Go back button
