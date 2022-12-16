@@ -106,6 +106,7 @@ function displayFinish () {
         document.getElementById("high-scores-screen").style.display = "none";
         document.getElementById("questions-screen").style.display = "none";
         clearInterval(timer);
+        timerElement.textContent = "Timer: " + timerCount;
         score.textContent = "Your final score: " + timerCount;
         
     }
