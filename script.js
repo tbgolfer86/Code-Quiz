@@ -42,10 +42,24 @@ var score = document.getElementById("score");
 var initials = document.getElementById("initials");
 var scoreboardItem = document.getElementById("scoreboard-item");
 
+x = localStorage.getItem("initials");
+y = localStorage.getItem("score");
+scoreboardItem.textContent = x + "                 " + y;
+
 document.getElementById("submit").addEventListener("click", function() {
     localStorage.setItem("initials", initials.value);
     localStorage.setItem("score", timerCount);
+    var scoreboardItems = document.createElement("li");
+    scoreboardItems.innerHTML = scoreboardItem.textContent;
+    document.getElementById("scoreboard").appendChild(scoreboardItems);
+    postScore();
 });
+
+function postScore() {
+    x = localStorage.getItem("initials");
+    y = localStorage.getItem("score");
+    scoreboardItem.textContent = x + "                 " + y;
+}
 
 //Game Timer function
 function startTimer() {
@@ -69,9 +83,6 @@ document.getElementById("view-high-scores").addEventListener("click", function()
     document.getElementById("quiz-intro-screen").style.display = "none";
     document.getElementById("questions-screen").style.display = "none";
     document.getElementById("quiz-finished-screen").style.display = "none";
-    x = localStorage.getItem("initials");
-    y = localStorage.getItem("score");
-    scoreboardItem.textContent = x + "                 " + y;
 });
 
 //Go back button
