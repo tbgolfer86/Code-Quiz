@@ -111,7 +111,7 @@ function displayFinish () {
     }
 };
 
-//validates buttons
+//validates answer buttons
 btn1.addEventListener("click", function() {
     if (numberChoice === 0) {
         (timerCount = timerCount - 10);   
