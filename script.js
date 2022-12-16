@@ -33,33 +33,37 @@ var option2 = document.getElementById("choice2");
 var option3 = document.getElementById("choice3");
 var option4 = document.getElementById("choice4");
 
+var score = document.getElementById("score");
 var timerElement = document.getElementById("timer");
 var timer;
 var timerCount = 60;
 
+
+
+
+
+
+
 //Submit score and initials to scoreboard
-var score = document.getElementById("score");
+
+
 var initials = document.getElementById("initials");
-var scoreboardItem = document.getElementById("scoreboard-item");
+var scoreboard = document.getElementById("scoreboard");
 
-x = localStorage.getItem("initials");
-y = localStorage.getItem("score");
-scoreboardItem.textContent = x + "                 " + y;
-
+var x = localStorage.getItem("initials");
+var y = localStorage.getItem("score");
 document.getElementById("submit").addEventListener("click", function() {
     localStorage.setItem("initials", initials.value);
     localStorage.setItem("score", timerCount);
-    var scoreboardItems = document.createElement("li");
-    scoreboardItems.innerHTML = scoreboardItem.textContent;
-    document.getElementById("scoreboard").appendChild(scoreboardItems);
-    postScore();
 });
 
-function postScore() {
-    x = localStorage.getItem("initials");
-    y = localStorage.getItem("score");
-    scoreboardItem.textContent = x + "                 " + y;
-}
+
+
+
+
+
+
+
 
 //Game Timer function
 function startTimer() {
