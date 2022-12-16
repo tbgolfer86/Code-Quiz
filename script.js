@@ -105,8 +105,9 @@ function displayFinish () {
         document.getElementById("quiz-intro-screen").style.display = "none";
         document.getElementById("high-scores-screen").style.display = "none";
         document.getElementById("questions-screen").style.display = "none";
-        score.textContent = "Your final score: " + timerCount;
         clearInterval(timer);
+        score.textContent = "Your final score: " + timerCount;
+        
     }
 };
 
