@@ -39,12 +39,7 @@ var timer;
 var timerCount = 60;
 
 //Submit score and initials to scoreboard
-document.getElementById("submit").addEventListener("click", function(event) {
-    event.preventDefault();
-    if (initials.value.length > 3) {
-        alert("Enter up to 3 letters");
-        return;
-    }
+document.getElementById("submit").addEventListener("click", function() {
     var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
     var newScore = {
         score: timerCount,
