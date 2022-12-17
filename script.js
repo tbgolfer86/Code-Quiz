@@ -41,7 +41,7 @@ var timerCount = 60;
 //Submit score and initials to scoreboard
 document.getElementById("submit").addEventListener("click", function(event) {
     event.preventDefault();
-    if (intials.value.length > 3) {
+    if (initials.value.length > 3) {
         alert("Enter up to 3 letters");
         return;
     }
