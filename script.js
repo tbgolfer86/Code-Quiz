@@ -90,6 +90,13 @@ document.getElementById("go-back").addEventListener("click", function() {
     displayQuiz();
 });
 
+//Clear high scores button
+document.getElementById("clear-high-scores").addEventListener("click", function() {
+    var scoreboard = document.getElementById("scoreboard");
+    scoreboard.remove();
+    localStorage.clear();
+});
+
 //Start game button
 document.getElementById("start-button").addEventListener("click", function() {
     document.getElementById("questions-screen").style.display = "flex";
