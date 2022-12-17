@@ -1,3 +1,7 @@
+:root {
+    --blue: rgb(65, 107, 186);
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +27,7 @@ li {
 button {
     outline: none;
     color:rgb(213, 255, 3);
-    background-color: rgb(132, 132, 143);
+    background-color: var(--blue);
     font-size: 14px;
     border-radius: 5px;
     border-style: none;
@@ -57,7 +61,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: cornflowerblue;
+    background-color: var(--blue);
     height: 55%;
     width: 50%;
     margin: auto;
@@ -71,7 +75,7 @@ button:hover {
     margin-left: 10vh;
     margin-right: 10vh;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: var(--blue);
 }
 
 /* MAIN */
@@ -82,7 +86,7 @@ main {
     margin-left: 10vh;
     margin-right: 10vh;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: var(--blue);
 }
 
 /* Questions Screen Styling */
@@ -93,7 +97,7 @@ main {
     margin-left: 10vh;
     margin-right: 10vh;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: var(--blue);
 }
 
 .questions-screen ul li {
@@ -108,7 +112,7 @@ main {
     margin-left: 10vh;
     margin-right: 10vh;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: var(--blue);
 }
 
 /* High Scores Screen Styling */
@@ -119,7 +123,7 @@ main {
     margin-left: 10vh;
     margin-right: 10vh;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: var(--blue);
 }
 
 #scoreboard {
