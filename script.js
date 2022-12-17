@@ -39,7 +39,8 @@ var timer;
 var timerCount = 60;
 
 //Submit score and initials to scoreboard
-document.getElementById("submit").addEventListener("click", function() {
+document.getElementById("submit").addEventListener("click", function(event) {
+    event.preventDefault();
     var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
     var newScore = {
         score: timerCount,
