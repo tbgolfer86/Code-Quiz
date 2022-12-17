@@ -38,29 +38,16 @@ var timerElement = document.getElementById("timer");
 var timer;
 var timerCount = 60;
 
-
-
-
-
-
-
 //Submit score and initials to scoreboard
-localStorage.getItem("initials");
-localStorage.getItem("score");
-
 document.getElementById("submit").addEventListener("click", function() {
-    localStorage.setItem("initials", initials.value);
-    localStorage.setItem("score", timerCount);
-    console.log("clicked me");
+    var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
+    var newScore = {
+        score: timerCount,
+        initial: initials.value,
+    };
+    highscores.push(newScore);
+    window.localStorage.setItem("highscores", JSON.stringify(highscores));
 });
-
-
-
-
-
-
-
-
 
 //Game Timer function
 function startTimer() {
@@ -84,6 +71,13 @@ document.getElementById("view-high-scores").addEventListener("click", function()
     document.getElementById("quiz-intro-screen").style.display = "none";
     document.getElementById("questions-screen").style.display = "none";
     document.getElementById("quiz-finished-screen").style.display = "none";
+    var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
+    for (var i = 0; i < highscores.length; i += 1) {
+        var liTag = document.createElement("li");
+        liTag.textContent = highscores[i].initial + " - " + highscores[i].score;
+        var olEl = document.getElementById("scoreboard");
+        olEl.appendChild(liTag);
+    }
 });
 
 //Go back button

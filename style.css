@@ -122,5 +122,8 @@ main {
 
 #scoreboard {
     display: flex;
-    height: 200px:
+    flex-wrap: wrap;
+    width: 100px;
+    justify-content: center;
+    color: orange;
 }
