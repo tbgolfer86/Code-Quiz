@@ -51,6 +51,7 @@ localStorage.getItem("score");
 document.getElementById("submit").addEventListener("click", function() {
     localStorage.setItem("initials", initials.value);
     localStorage.setItem("score", timerCount);
+    console.log("clicked me");
 });
 
 
