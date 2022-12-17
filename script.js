@@ -45,20 +45,12 @@ var timerCount = 60;
 
 
 //Submit score and initials to scoreboard
-
-
-var initials = document.getElementById("initials");
-var scoreboard = document.getElementById("scoreboard");
-var board = [];
-JSON.stringify(board);
-var x = localStorage.getItem("initials");
-var y = localStorage.getItem("score");
+localStorage.getItem("initials");
+localStorage.getItem("score");
 
 document.getElementById("submit").addEventListener("click", function() {
     localStorage.setItem("initials", initials.value);
     localStorage.setItem("score", timerCount);
-    board.push(x + y);
-    scoreboard.textContent = board;
 });
 
 
