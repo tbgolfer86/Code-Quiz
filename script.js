@@ -72,6 +72,8 @@ document.getElementById("view-high-scores").addEventListener("click", function()
     document.getElementById("questions-screen").style.display = "none";
     document.getElementById("quiz-finished-screen").style.display = "none";
     var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
+    var olEl = document.getElementById("scoreboard");
+    olEl.innerHTML = "";
     for (var i = 0; i < highscores.length; i++) {
         var liTag = document.createElement("li");
         liTag.textContent = highscores[i].initial + " - " + highscores[i].score;
