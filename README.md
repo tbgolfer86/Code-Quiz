@@ -13,4 +13,4 @@ This app runs in the browser. The user is instructed to press the 'START' button
 https://tbgolfer86.github.io/Module4-Challenge-Code-Quiz/
 
 The screenshot below shows it open.
-![alt text](Screenshot%202022-12-15%20at%201.25.55%20PM.png)
+![alt text](Screenshot%202022-12-18%20at%203.24.24%20PM.png)
