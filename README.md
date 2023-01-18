@@ -13,4 +13,4 @@ This app runs in the browser. The user is instructed to press the 'START' button
 https://tbgolfer86.github.io/Code-Quiz/
 
 The screenshot below shows it open.
-![alt text](Screenshot%202022-12-18%20at%203.24.24%20PM.png)
+![alt text](assets/Screenshot%202022-12-18%20at%203.24.24%20PM.png)
