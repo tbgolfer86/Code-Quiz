@@ -134,3 +134,20 @@ main {
     justify-content: center;
     color: white;
 }
+
+
+
+/************ media queries ************/
+@media screen and (max-width: 992px) {
+    
+  }
+  
+@media screen and (max-width: 768px) {
+ 
+  }
+
+@media screen and (max-width: 576px) {
+    .cards {
+        width: 100%;
+    }
+  }
