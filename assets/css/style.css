@@ -39,20 +39,20 @@ button:hover {
     background-color: black;
 }
 
-/* Outer Container Styling */
-.outer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 10px;
-    height: 100vh;
-}
-
 /* Top Bar Styling */
 .top-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    white-space: nowrap;
+}
+
+/* Outer Container Styling */
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
 }
 
 /* Inner Container Styling */
