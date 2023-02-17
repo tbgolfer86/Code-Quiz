@@ -121,3 +121,21 @@ button:hover {
     width: 100%;
     padding: 5%;
 }
+
+
+
+/************ media queries ************/
+@media screen and (max-width: 992px) {
+   
+  }
+  
+@media screen and (max-width: 768px) {
+ 
+  }
+
+@media screen and (max-width: 576px) {
+    .inner-container {
+        height: 75%;
+        width: 75%;
+    }
+  }
