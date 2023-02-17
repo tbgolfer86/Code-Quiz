@@ -53,7 +53,8 @@ button:hover {
 .outer-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
@@ -66,7 +67,6 @@ button:hover {
     background-color: var(--blue);
     height: 55%;
     width: 50%;
-    margin: auto;
 }
 
 /* Quiz Intro Screen Styling */
