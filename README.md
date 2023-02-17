@@ -26,7 +26,7 @@
   https://tbgolfer86.github.io/Code-Quiz/
   
   The screenshot below shows it open.
-  ![alt text](./assets/images/Screenshot%202022-12-18%20at%203.24.24%20PM.png)
+  ![alt text](./assets/images/Screenshot%202023-02-17%20at%204.57.15%20PM.png)
 
 ---
 
