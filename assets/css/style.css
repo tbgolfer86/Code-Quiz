@@ -124,4 +124,7 @@ button:hover {
         height: 75%;
         width: 75%;
     }
+    .outer-container {
+        height: 90vh;
+    }
   }
