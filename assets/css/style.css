@@ -17,7 +17,7 @@ body {
 }
 
 p {
-    font-size: 12px;
+    font-size: 1em;
     padding-bottom: 5px;
 }
 
@@ -29,7 +29,7 @@ button {
     outline: none;
     color:rgb(213, 255, 3);
     background-color: var(--blue);
-    font-size: 14px;
+    font-size: 1em;
     border-radius: 5px;
     border-style: none;
     padding: 2px;
@@ -76,6 +76,10 @@ button:hover {
     text-align: center;
     background-color: var(--blue);
     padding: 5%;
+}
+
+h1, h2 {
+    font-size: 2em;
 }
 
 /* Questions Screen Styling */
