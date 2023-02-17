@@ -73,10 +73,8 @@ button:hover {
 .quiz-intro-screen {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     background-color: var(--blue);
-    width: 100%;
     padding: 5%;
 }
 
@@ -84,12 +82,8 @@ button:hover {
 .questions-screen {
     display: none;
     flex-direction: column;
-    align-items: flex-start;
-    margin-left: 10vh;
-    margin-right: 10vh;
     text-align: center;
     background-color: var(--blue);
-    width: 100%;
     padding: 5%;
 }
 
@@ -101,25 +95,21 @@ button:hover {
 .quiz-finished-screen {
     display: none;
     flex-direction: column;
-    align-items: center;
-    margin-left: 10vh;
-    margin-right: 10vh;
     text-align: center;
     background-color: var(--blue);
-    width: 100%;
     padding: 5%;
+}
+
+#initials {
+    width: 35%;
 }
 
 /* High Scores Screen Styling */
 .high-scores-screen {
     display: none;
     flex-direction: column;
-    align-items: center;
-    margin-left: 10vh;
-    margin-right: 10vh;
     text-align: center;
     background-color: var(--blue);
-    width: 100%;
     padding: 5%;
 }
 
@@ -131,20 +121,3 @@ button:hover {
     width: 100%;
     padding: 5%;
 }
-
-
-
-/************ media queries ************/
-@media screen and (max-width: 992px) {
-    
-  }
-  
-@media screen and (max-width: 768px) {
- 
-  }
-
-@media screen and (max-width: 576px) {
-    .cards {
-        width: 100%;
-    }
-  }
