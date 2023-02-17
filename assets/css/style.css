@@ -16,6 +16,10 @@ body {
     color: yellowgreen;  
 }
 
+h1, h2 {
+    font-size: 2em;
+}
+
 p {
     font-size: 1em;
     padding-bottom: 5px;
@@ -78,12 +82,8 @@ button:hover {
     padding: 5%;
 }
 
-h1, h2 {
-    font-size: 2em;
-}
-
-/* Questions Screen Styling */
-.questions-screen {
+/* Quiz Styling */
+.questions-screen, .quiz-finished-screen, .high-scores-screen {
     display: none;
     flex-direction: column;
     text-align: center;
@@ -95,26 +95,8 @@ h1, h2 {
     text-align: left;
 }
 
-/* Quiz Finished Screen Styling */
-.quiz-finished-screen {
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    background-color: var(--blue);
-    padding: 5%;
-}
-
 #initials {
     width: 35%;
-}
-
-/* High Scores Screen Styling */
-.high-scores-screen {
-    display: none;
-    flex-direction: column;
-    text-align: center;
-    background-color: var(--blue);
-    padding: 5%;
 }
 
 #scoreboard {
